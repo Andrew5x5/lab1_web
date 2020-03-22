@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-main-page.css">
+    <link rel="stylesheet" href="style-food-menu.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="page">
+    <div class="menu">
+        <i class="menu_close menu-icons fa fa-times fa-lg"></i>
+        <i class="menu_open menu-icons fa fa-bars fa-lg"></i>
+    </div>
+    <script>
+        $( ".menu" ).click(function() {
+            $( ".content-menu-page" ).toggleClass( "change");
+        });
+        $( ".menu" ).click(function() {
+            $( this ).toggleClass( "change1");
+        });
+        $( ".menu" ).click(function() {
+            $( ".home-li" ).toggleClass( "move-home");
+        });
+        $( ".menu" ).click(function() {
+            $( ".menu-li" ).toggleClass( "move-menu");
+        });
+        $( ".menu" ).click(function() {
+            $( ".phone-li" ).toggleClass( "move-phone");
+        });
+        $( ".menu" ).click(function() {
+            $( ".login-li" ).toggleClass( "move-login");
+        });
+    </script>
+
+    <nav>
+        <ul class="menu_items">
+            <li class="home-li"><a href="main-page.html"><i class="icon icon-home fas fa-home"></i>Home</a></li>
+            <li class="menu-li"><a href="food-menu.html"><i class="icon icon-menu fas fa-hamburger"></i>Menu</a></li>
+            <li class="phone-li"><a href="#"><i class="icon icon-phone fas fa-phone"></i>Contact info</a></li>
+            <li class="login-li"><a href="register.html"><i class="icon icon-log fas fa-sign-out-alt"></i>Login</a></li>
+        </ul>
+    </nav>
+    <div class="content-menu-page">
+        <div class="image">
+            <a href="main-page.html"><img src="logo-standalone.png" alt="Split-logo" style="width: 100px; height: auto"></a>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+        <div class="reserve">
+            <a href=""><i class="fas fa-phone"></i> +38(077)-77-77-777 Reserve</a>
+        </div>
+        <nav>
+            <a href="food-menu.html">Night club</a>
+            <a href="food-menu-restaurant.html" >Restaurant</a>
+            <a href="food-menu-wine-card.html">Wine card</a>
+            <a href="#" class="active">Bar card</a>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade class1">
+                <div class="numbertext">1 / 3</div>
+                <img src="1.3.png" style="width:95%" class="item1" id="switch">
+            </div>
+            <div class="mySlides fade ">
+                <div class="numbertext">2 / 3</div>
+                <img src="2.3.png" style="width:95%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="3.3.png" style="width:95%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>
