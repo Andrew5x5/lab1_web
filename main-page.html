@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-main-page.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="page">
+    <div class="menu">
+        <i class="menu_close menu-icons fa fa-times fa-lg"></i>
+        <i class="menu_open menu-icons fa fa-bars fa-lg"></i>
+    </div>
+    <script>
+        $( ".menu" ).click(function() {
+            $( ".content-main-page" ).toggleClass( "change");
+        });
+        $( ".menu" ).click(function() {
+            $( this ).toggleClass( "change1");
+        });
+        $( ".menu" ).click(function() {
+            $( ".home-li" ).toggleClass( "move-home");
+        });
+        $( ".menu" ).click(function() {
+            $( ".menu-li" ).toggleClass( "move-menu");
+        });
+        $( ".menu" ).click(function() {
+            $( ".phone-li" ).toggleClass( "move-phone");
+        });
+        $( ".menu" ).click(function() {
+            $( ".login-li" ).toggleClass( "move-login");
+        });
+    </script>
+
+<nav>
+    <ul class="menu_items">
+        <li class="home-li"><a href="main-page.html"><i class="icon icon-home fas fa-home"></i>Home</a></li>
+        <li class="menu-li"><a href="food-menu.html"><i class="icon icon-menu fas fa-hamburger"></i>Menu</a></li>
+        <li class="phone-li"><a href="contact.html"><i class="icon icon-phone fas fa-phone"></i>Contact info</a></li>
+        <li class="login-li"><a href="register.html"><i class="icon icon-log fas fa-sign-out-alt"></i>Login</a></li>
+    </ul>
+</nav>
+    <div class="content-main-page">
+        <div class="image">
+            <a href="main-page.html"><img src="logo-standalone.png" alt="Split-logo" style="width: 100px; height: auto"></a>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+        <div class="reserve">
+            <a href=""><i class="fas fa-phone"></i> +38(077)-77-77-777 Reserve</a>
+        </div>
+        <div class="textarea">
+        <h1>Welcome to Split</h1>
+        <p>In the heart of the old town you will find an oasis of relaxation, where all senses awaken.
+            The atmosphere of the institution is created with a combination of classics and
+            modernity in the interior. The exquisite design of the premium loft-style design will
+            facilitate relaxation and communication.
+            All design elements are exclusive custom made items.</p>
+        </div>
+            <div class="row">
+                <div class="column">
+                    <div class="pos-sign">Karaoke</div>
+                    <a class='read-more-link' href=""><img src="caraoke.jpg" alt="Snow" style="width:100%"></a>
+                    <div class="pos-read1 read-more"><a href="">Read more</a></div>
+                </div>
+                <div class="column">
+                    <div class="pos-sign">Restaurant</div>
+                    <a class='read-more-link' href=""><img src="zoi.jpg" alt="Forest" style="width:100%"></a>
+                    <div class="pos-read2 read-more"><a href="">Read more</a></div>
+                </div>
+                <div class="column">
+                    <div class="pos-sign">Night club</div>
+                    <a class='read-more-link' href=""><img src="party.jpg" alt="Mountains" style="width:100%"></a>
+                    <div class="pos-read3 read-more"><a href="">Read more</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
