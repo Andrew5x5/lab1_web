@@ -22,6 +22,7 @@ body, html{
     font-family: 'Baloo Thambi 2', cursive;
     text-transform: uppercase;
 }
+
 .register, .login{
     display: flex;
     height: 100%;
@@ -52,13 +53,30 @@ body, html{
     background-color: #666666;
 }
 
+.left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+
+}
+
+.left-content h1{
+    text-transform: uppercase;
+}
+
+.have_acc{
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffb8b8;
+}
+
+
 .sign, .log{
     color: #ffb8b8;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: absolute;
-    top: 20%;
-    left: 180px;
 }
 
 .log{
@@ -69,17 +87,16 @@ body, html{
 .users-icon{
     font-size: 180px;
     color: #ffb8b8;
-    position: absolute;
-    left: 15%;
-    top:38%
 }
 
 .users-icon-log{
     color: #f7f1e3;
 }
-.form-register{
+
+.right-content{
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 20%;
     right: 20%;
 }
 
@@ -109,6 +126,7 @@ input[type=submit]{
     outline: none;
     cursor: pointer;
 }
+
 input[type=text], input[type=email], input[type=password], input[type=number]{
     font-family: 'Baloo Thambi 2', cursive;
     color: #ffb8b8;
@@ -196,17 +214,6 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.have_acc:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    background-color: #ffb8b8;
-    width: 100%;
-    transform: scaleX(0);
-    transition: .3s;
-    height: 2px;
-    transform-origin: left;
-}
 
 .cancel:before, .cancel-log:before{
     content: '';
@@ -220,11 +227,22 @@ input[type=number] {
     transition: .3s;
     transform-origin: left;
 }
+
 .cancel-log:before{
     background-color: #f7f1e3;
 }
 
-.cancel:hover:before, .have_acc:hover:before, .cancel-log:hover:before{
+
+.have_acc:after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px #ffb8b8;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+
+.cancel:hover:before, .have_acc:hover:after, .cancel-log:hover:before{
     transform: scaleX(1);
 }
 
@@ -234,7 +252,3 @@ input[type=submit]:hover{
     transition: .3s;
 }
 
-.have_acc{
-    position: absolute;
-    left: -310%;
-}
