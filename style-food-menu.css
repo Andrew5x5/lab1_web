@@ -143,7 +143,7 @@ img {
 @media only screen and (max-width: 800px) {
   .content-menu-page {
     height: auto;
-    padding-top: 25%;
+    padding-top: 30%;
   }
   .content-menu-page .social-disappear {
     display: none;
@@ -158,7 +158,7 @@ img {
     display: none;
   }
   .content-menu-page .reserve {
-    margin-top: 13%;
+    margin-top: 15%;
   }
   .content-menu-page .reserve:after {
     display: none;

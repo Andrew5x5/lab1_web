@@ -40,10 +40,10 @@
 @media only screen and (max-width: 800px) {
   .content-contact-page {
     height: 140%;
-    padding-top: 20%;
+    padding-top: 25%;
   }
   .content-contact-page .reserve {
-    margin-top: 10%;
+    margin-top: 15%;
   }
   .content-contact-page .reserve:after {
     display: none;
