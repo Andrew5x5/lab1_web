@@ -132,7 +132,7 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 800px) {
   .content-menu-page{
     height: auto;
-    padding-top: 30%;
+    padding-top: 25%;
     .social-disappear{
       display: none;
     }
@@ -146,10 +146,9 @@ img {vertical-align: middle;}
       display: none;
     }
     .reserve{
-      position: absolute;
-      top: 75px;
-      left: 65px;
+      margin-top: 10%;
     }
+
     .reserve:after{
       display: none;
     }

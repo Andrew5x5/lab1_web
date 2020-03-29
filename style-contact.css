@@ -43,9 +43,7 @@
     padding-top: 20%;
   }
   .content-contact-page .reserve {
-    position: absolute;
-    top: 75px;
-    left: 65px;
+    margin-top: 10%;
   }
   .content-contact-page .reserve:after {
     display: none;
