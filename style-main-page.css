@@ -305,6 +305,9 @@ body, html {
   .content-main-page .reserve {
     margin-top: 15%;
   }
+  .content-main-page .textarea {
+    margin-top: 5%;
+  }
   .content-main-page .reserve:after {
     display: none;
   }
