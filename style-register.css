@@ -7,7 +7,7 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: #ffb8b8;
-  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Inconsolata", monospace;
 }
 
 .body-login {
@@ -15,11 +15,11 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: #f7f1e3;
-  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Inconsolata", monospace;
 }
 
 ::placeholder {
-  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Inconsolata", monospace;
   text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@ body, html {
 }
 
 input[type=submit] {
-  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Inconsolata", monospace;
   color: #ffb8b8;
   border: none;
   background: none;
@@ -128,7 +128,7 @@ input[type=submit] {
 }
 
 input[type=text], input[type=email], input[type=password], input[type=number] {
-  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Inconsolata", monospace;
   color: #ffb8b8;
   width: 250px;
   display: block;

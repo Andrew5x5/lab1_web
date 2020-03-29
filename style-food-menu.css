@@ -22,7 +22,7 @@
   background-color: #ffb8b8;
 }
 .content-menu-page nav a {
-  font-family: "Indie Flower", cursive;
+  font-family: "Inconsolata", monospace;
   text-align: center;
   width: 25%;
   padding: 10px;
@@ -158,7 +158,7 @@ img {
     display: none;
   }
   .content-menu-page .reserve {
-    margin-top: 10%;
+    margin-top: 13%;
   }
   .content-menu-page .reserve:after {
     display: none;
