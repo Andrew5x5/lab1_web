@@ -16,24 +16,51 @@
   width: 72%;
   height: 400px;
   background-color: grey;
-  display: inline-block;
 }
 
 .info {
-  margin-top: 120px;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
-  float: left;
   padding: 0 20px 0 20px;
 }
 
 .info-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   padding: 10px;
   border: 3px solid #ffb8b8;
 }
 
 .contact-header {
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 800px) {
+  .content-contact-page {
+    height: 140%;
+    padding-top: 20%;
+  }
+  .content-contact-page .reserve {
+    position: absolute;
+    top: 75px;
+    left: 65px;
+  }
+  .content-contact-page .reserve:after {
+    display: none;
+  }
+
+  .social-disappear {
+    display: none;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+  .info-container .map {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style-contact.css.map */

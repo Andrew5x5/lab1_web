@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body1">
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="style-food-menu.css">
     <title>Title</title>
 </head>
-<body>
+<body class="body1">
 <div class="page">
     <div class="menu">
         <i class="menu_close menu-icons fa fa-times fa-lg"></i>
@@ -20,21 +21,12 @@
     <script>
         $( ".menu" ).click(function() {
             $( ".content-menu-page" ).toggleClass( "change");
-        });
-        $( ".menu" ).click(function() {
             $( this ).toggleClass( "change1");
-        });
-        $( ".menu" ).click(function() {
             $( ".home-li" ).toggleClass( "move-home");
-        });
-        $( ".menu" ).click(function() {
             $( ".menu-li" ).toggleClass( "move-menu");
-        });
-        $( ".menu" ).click(function() {
             $( ".phone-li" ).toggleClass( "move-phone");
-        });
-        $( ".menu" ).click(function() {
             $( ".login-li" ).toggleClass( "move-login");
+            $( ".body1" ).toggleClass( "scroll-bar");
         });
     </script>
 
@@ -50,7 +42,7 @@
         <div class="image">
             <a href="index.html"><img src="images/logo-standalone.png" alt="Split-logo" style="width: 100px; height: auto"></a>
         </div>
-        <div class="social">
+        <div class="social social-disappear">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
@@ -83,7 +75,14 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div style="text-align:center">
+        <div class="phone-version">
+            <img src="images/phone2.png" alt="menu" style="width: 100%; height: auto">
+            <hr>
+            <img src="images/phone22.png" alt="menu" style="width: 100%; height: auto">
+            <hr>
+            <img src="images/phone222.png" alt="menu" style="width: 100%; height: auto">
+        </div>
+        <div style="text-align:center" class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>

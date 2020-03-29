@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body2">
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style-contact.css">
     <title>Title</title>
 </head>
-<body>
+<body class="body2">
 <div class="page">
     <div class="menu">
         <i class="menu_close menu-icons fa fa-times fa-lg"></i>
@@ -20,21 +20,12 @@
     <script>
         $( ".menu" ).click(function() {
             $( ".content-contact-page" ).toggleClass( "change");
-        });
-        $( ".menu" ).click(function() {
             $( this ).toggleClass( "change1");
-        });
-        $( ".menu" ).click(function() {
             $( ".home-li" ).toggleClass( "move-home");
-        });
-        $( ".menu" ).click(function() {
             $( ".menu-li" ).toggleClass( "move-menu");
-        });
-        $( ".menu" ).click(function() {
             $( ".phone-li" ).toggleClass( "move-phone");
-        });
-        $( ".menu" ).click(function() {
             $( ".login-li" ).toggleClass( "move-login");
+            $( ".body2" ).toggleClass( "scroll-bar");
         });
     </script>
 
@@ -50,7 +41,7 @@
         <div class="image">
             <a href="index.html"><img src="images/logo-standalone.png" alt="Split-logo" style="width: 100px; height: auto"></a>
         </div>
-        <div class="social">
+        <div class="social social-disappear">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>

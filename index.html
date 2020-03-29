@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,31 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-main-page.css">
     <title>Title</title>
+    <script>
+        function closeNav(){
+            document.body.style.overflowY = 'auto';
+        }
+        function openNav() {
+            document.body.style.overflowY = 'hidden';
+
+        }
+    </script>
 </head>
-<body>
+<body class="body">
 <div class="page">
     <div class="menu">
-        <i class="menu_close menu-icons fa fa-times fa-lg"></i>
-        <i class="menu_open menu-icons fa fa-bars fa-lg"></i>
+        <a href="javascript:void(0)" onclick="openNav()"><i class="menu_close menu-icons fa fa-times fa-lg"></i></a>
+        <a href="javascript:void(0)" onclick="closeNav()"><i class="menu_open menu-icons fa fa-bars fa-lg"></i></a>
     </div>
     <script>
         $( ".menu" ).click(function() {
             $( ".content-main-page" ).toggleClass( "change");
-        });
-        $( ".menu" ).click(function() {
             $( this ).toggleClass( "change1");
-        });
-        $( ".menu" ).click(function() {
             $( ".home-li" ).toggleClass( "move-home");
-        });
-        $( ".menu" ).click(function() {
             $( ".menu-li" ).toggleClass( "move-menu");
-        });
-        $( ".menu" ).click(function() {
             $( ".phone-li" ).toggleClass( "move-phone");
-        });
-        $( ".menu" ).click(function() {
             $( ".login-li" ).toggleClass( "move-login");
+            $( ".body" ).toggleClass( "scroll-bar");
         });
     </script>
 
@@ -42,19 +42,19 @@
     <ul class="menu_items">
         <li class="home-li"><a href="index.html"><i class="icon icon-home fas fa-home"></i>Home</a></li>
         <li class="menu-li"><a href="food-menu.html"><i class="icon icon-menu fas fa-hamburger"></i>Menu</a></li>
-        <li class="phone-li"><a href="contact.html"><i class="icon icon-phone fas fa-phone"></i>Contact info</a></li>
         <li class="login-li"><a href="register.html"><i class="icon icon-log fas fa-sign-out-alt"></i>Login</a></li>
+        <li class="phone-li"><a href="contact.html"><i class="icon icon-phone fas fa-phone"></i>Contact info</a></li>
     </ul>
 </nav>
     <div class="content-main-page">
         <div class="image">
             <a href="index.html"><img src="images/logo-standalone.png" alt="Split-logo" style="width: 100px; height: auto"></a>
         </div>
-
         <div class="reserve">
             <a href=""><i class="fas fa-phone"></i> +38(077)-77-77-777 Reserve</a>
         </div>
         <div class="textarea">
+
         <h1>Welcome to Split</h1>
             <div class="social">
                 <i class="fab fa-facebook"></i>

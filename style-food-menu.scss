@@ -14,28 +14,26 @@
   height: 200%;
   transform-origin: top left;
   transition: 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffb8b8;
+  }
+  nav a{
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  nav .active{
+    background-color: #2c2c54;
+    color: white;
+  }
 }
 
-.content-menu-page nav{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #ffb8b8;
-}
-
-.content-menu-page nav a{
-  font-family: "Indie Flower", cursive;
-  text-align: center;
-  width: 25%;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.content-menu-page nav .active{
-  background-color: #2c2c54;
-  color: white;
-}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -126,3 +124,38 @@ img {vertical-align: middle;}
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.phone-version{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .content-menu-page{
+    height: 350%;
+    padding-top: 25%;
+    .social-disappear{
+      display: none;
+    }
+    .slideshow-container{
+      display: none;
+    }
+    .phone-version{
+      display: block;
+    }
+    .dots{
+      display: none;
+    }
+    .reserve{
+      position: absolute;
+      top: 75px;
+      left: 65px;
+    }
+    .reserve:after{
+      display: none;
+    }
+
+  }
+
+
+}
+
