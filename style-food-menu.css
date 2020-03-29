@@ -142,8 +142,8 @@ img {
 
 @media only screen and (max-width: 800px) {
   .content-menu-page {
-    height: 350%;
-    padding-top: 25%;
+    height: auto;
+    padding-top: 30%;
   }
   .content-menu-page .social-disappear {
     display: none;
